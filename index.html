@@ -7,25 +7,25 @@
     <meta name="mobile-web-app-capable" content="yes">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="https://konskall-ai.github.io/alieninvaders/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="https://konskall-ai.github.io/alieninvaders/favicon.svg" />
-    <link rel="shortcut icon" href="https://konskall-ai.github.io/alieninvaders/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://konskall-ai.github.io/alieninvaders/apple-touch-icon.png" />
-    <link rel="manifest" href="https://konskall-ai.github.io/alieninvaders/site.webmanifest" />
+	<link rel="icon" type="image/png" href="https://konskall.github.io/alieninvaders/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="https://konskall.github.io/alieninvaders/favicon.svg" />
+    <link rel="shortcut icon" href="https://konskall.github.io/alieninvaders/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://konskall.github.io/alieninvaders/apple-touch-icon.png" />
+    <link rel="manifest" href="https://konskall.github.io/alieninvaders/site.webmanifest" />
 	<!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://konskall-ai.github.io/alieninvaders/index.html">
+    <meta property="og:url" content="https://konskall.github.io/alieninvaders/index.html">
     <meta property="og:title" content="Alien Invaders - Space War">
     <meta property="og:description" content="Challenge yourself in this intense space shooter! Defeat alien invaders and reach the top scores.">
-    <meta property="og:image" content="https://konskall-ai.github.io/alieninvaders/og-alien.png">
+    <meta property="og:image" content="https://konskall.github.io/alieninvaders/og-alien.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://konskall-ai.github.io/alieninvaders/index.html">
+    <meta property="twitter:url" content="https://konskall.github.io/alieninvaders/index.html">
     <meta property="twitter:title" content="Alien Invaders - Space War">
     <meta property="twitter:description" content="Challenge yourself in this intense space shooter!">
-    <meta property="twitter:image" content="https://konskall-ai.github.io/alieninvaders/og-alien.png">
+    <meta property="twitter:image" content="https://konskall.github.io/alieninvaders/og-alien.png">
    <!-- Apple specific -->
     <meta name="apple-mobile-web-app-title" content="Alien Invaders">
     <title>Alien Invaders - Space War</title>
@@ -49,48 +49,36 @@
 <div id="story-screen" class="screen hidden">
     <div class="screen-content story-content">
         <button class="story-close-btn" id="story-close-btn">✕</button>
-        
         <h1 class="story-title">Ο Κύκλος του Κενού</h1>
-        
         <div class="story-body">
             <h2>Η Εισβολή</h2>
-            
             <p>
                 Το 2026, το <strong>Xenophage Collective</strong>—μια αρχαία κοσμική αυτοκρατορία— 
                 αφυπνίστηκε. Η πρώτη μας εκπομπή προς τα άστρα... ήταν το σήμα της αφύπνισής τους.  
             </p>
-            
             <p>
                 Ο εχθρός ερχόταν κατά κύματα <strong>Scout Drones</strong>, ύστερα τα <strong>Fighter Wasps</strong>.  
                 Πόλεις κάηκαν. Έθνη κατέρρευσαν. Η ανθρωπότητα ενοποιήθηκε.  
             </p>
-
             <h2>Ο Πόλεμος</h2>
-            
             <p>
                 Οι ουρανοί γέμισαν με <strong>Alien Leviathans</strong>— 
                 πλάσματα φτιαγμένα από καθαρή κοσμική ενέργεια.  
             </p>
-
             <p>
                 Και μετά ήρθαν εκείνοι... τα <strong>Void Entities</strong>.  
                 Όντα που αψηφούν τη πραγματικότητα. 
             </p>
-
             <h2>Η Αντεπίθεση</h2>
-
             <p>
                 Διαστημόπλοια με χρωμιωμένο περίβλημα, 
                 οπλισμένα με την πιο προηγμένη τεχνολογία που γνώρισε ποτέ η ανθρωπότητα.
                 Κάθε νίκη, μια αναπνοή ελπίδας.
             </p>
-
             <h2>Σήμερα</h2>
-            
             <p> 
                 Δεν νικήσαμε τον εχθρό ακόμα... αλλά σταθήκαμε όρθιοι. Μια εύθραυστη <strong>Στρατηγική Ισοδυναμία</strong>.  
             </p>
-
             <p>
                 Ο πόλεμος συνεχίζεται. <a href="#" onclick="document.getElementById('story-screen').classList.add('hidden'); document.getElementById('start-screen').classList.add('hidden'); game.startGame(); return false;" class="story-play-link">
         Ξεκινήστε την Μάχη.
@@ -107,15 +95,12 @@
 <div id="gallery-screen" class="screen hidden">
   <div class="screen-content gallery-content">
     <button class="story-close-btn" id="gallery-close-btn">✕</button>
-    
     <h1 class="gallery-title">Artwork Gallery</h1>
-    
     <div class="gallery-container">
       <div class="gallery-grid" id="gallery-grid">
         <!-- Gallery items generated from JavaScript -->
       </div>
     </div>
-    
     <!-- Lightbox Modal for Full View -->
     <div id="lightbox" class="lightbox hidden">
       <div class="lightbox-content">
@@ -209,7 +194,6 @@
                 <button class="btn btn--primary btn--lg" id="start-btn">Έναρξη Παιχνιδιού</button>
             </div>
         </div>
-
         <!-- Game Over Screen -->
         <div id="game-over-screen" class="screen hidden">
             <div class="screen-content">
@@ -219,13 +203,11 @@
                     <p class="final-score" id="final-score">0</p>
 					<button id="view-leaderboard-btn" class="btn btn--primary btn--lg btn--full-width">Top Players 👑</button>
                 </div>
-				
                 <button class="btn btn--primary btn--lg" id="restart-btn">Νέο Παιχνίδι</button>
                 <button class="btn btn--primary btn--lg" id="game-over-settings-btn" style="margin-top: 16px;">Ρυθμίσεις</button>
                 <button class="btn btn--primary btn--lg" id="share-score-btn" style="margin-top: 16px;">Κοινοποίηση Σκορ 🏆</button>
             </div>
         </div>
-
         <!-- Pause Screen -->
         <div id="pause-screen" class="screen hidden">
             <div class="screen-content">
@@ -233,10 +215,8 @@
                 <p class="subtitle">Πάτησε P για συνέχεια</p>
             </div>
         </div>
-
         <!-- Game Canvas -->
         <canvas id="game-canvas"></canvas>
-
         <!-- Touch Controls -->
         <div id="touch-controls" class="hidden">
             <!-- Virtual Joystick (moved to bottom right) -->
@@ -293,7 +273,6 @@
             <div class="bonuses-container" id="bonuses-container"></div>
         </div>
     </div>
-
 	<!-- Leaderboard Modal -->
 <div id="leaderboard-modal" class="modal hidden">
     <div class="modal-content">
