@@ -25,6 +25,39 @@
     border-top: 1px solid rgba(50, 184, 198, 0.3);
 }
 
+/* LEADERBOARD TABS (Solo / Co-op) */
+
+.leaderboard-tabs {
+    display: flex;
+    gap: var(--space-8);
+    padding: var(--space-12) var(--space-16) 0;
+}
+
+.leaderboard-tab {
+    flex: 1;
+    padding: var(--space-8) var(--space-12);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(50, 184, 198, 0.3);
+    border-radius: var(--radius-base);
+    color: rgba(167, 169, 169, 0.9);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.leaderboard-tab:hover {
+    border-color: rgba(50, 184, 198, 0.6);
+    color: var(--color-teal-300);
+}
+
+.leaderboard-tab.active {
+    background: rgba(50, 184, 198, 0.2);
+    border-color: var(--color-teal-300);
+    color: var(--color-teal-300);
+    box-shadow: 0 0 10px rgba(50, 184, 198, 0.3);
+}
+
 /* LEADERBOARD LIST STYLES */
 
 .leaderboard-list {

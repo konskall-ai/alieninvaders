@@ -1340,11 +1340,23 @@ export class Game {
 showLeaderboardModal(coop = this._lastWasCoop) {
     const modal = document.getElementById('leaderboard-modal');
     const title = modal.querySelector('.modal-header h2');
-    if (title) title.textContent = coop ? 'Co-op Κατάταξη' : 'Λίστα Κορυφαίων Παικτών';
+    const soloTab = document.getElementById('leaderboard-tab-solo');
+    const coopTab = document.getElementById('leaderboard-tab-coop');
+
+    const setView = (isCoop) => {
+        if (title) title.textContent = isCoop ? 'Co-op Κατάταξη' : 'Λίστα Κορυφαίων Παικτών';
+        soloTab.classList.toggle('active', !isCoop);
+        coopTab.classList.toggle('active', isCoop);
+        soloTab.setAttribute('aria-selected', String(!isCoop));
+        coopTab.setAttribute('aria-selected', String(isCoop));
+        this.updateLeaderboardDisplay(isCoop);
+    };
+    soloTab.onclick = () => setView(false);
+    coopTab.onclick = () => setView(true);
 
     // View-only — name entry now lives in the Game Over screen
     modal.classList.remove('hidden');
-    this.updateLeaderboardDisplay(coop);
+    setView(coop);   // opens on the last-played mode; the tabs switch it manually
 
     // Κλείσιμο modal
     const closeBtn = modal.querySelector('.modal-close');
